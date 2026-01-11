@@ -3,294 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petstone Research - The 7-Day Potty Training Breakthrough</title>
+    <title>Petstone Research Group - Multi-Category Dog Research Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#0A192F',
-                        'primary-foreground': '#FFFFFF',
-                        secondary: '#F0F2F5',
-                        muted: '#F0F2F5',
-                        'muted-foreground': '#64748B',
-                        'chart-1': '#FF6B35',
-                        border: '#E2E8F0',
-                        background: '#FFFFFF',
-                        foreground: '#0A192F',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #0A192F; }
+        body { font-family: 'Merriweather', serif; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; }
-        p { font-family: 'Merriweather', serif; }
+        nav a { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-background text-foreground antialiased">
-
-    <!-- Navigation -->
-    <header class="sticky top-0 z-50 w-full border-b border-border bg-white/95 backdrop-blur">
-        <div class="container mx-auto px-4 flex h-16 items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="h-8 w-8 bg-primary flex items-center justify-center text-white font-bold text-lg">P</div>
-                <span class="text-xl font-bold tracking-tight">Petstone Research</span>
+<body class="bg-white text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex items-center justify-between h-16">
+                <div class="font-bold text-xl text-blue-900">Petstone Research</div>
+                <div class="flex gap-8 items-center">
+                    <a href="/" class="text-gray-700 hover:text-blue-900 font-semibold">Home</a>
+                    <a href="#behavior" class="text-gray-700 hover:text-blue-900 font-semibold">Behavior</a>
+                    <a href="#longevity" class="text-gray-700 hover:text-blue-900 font-semibold">Longevity</a>
+                    <a href="#finance" class="text-gray-700 hover:text-blue-900 font-semibold">Finance</a>
+                    <a href="login.html" class="px-4 py-2 bg-blue-900 text-white rounded font-semibold hover:bg-blue-800">Login</a>
+                </div>
             </div>
-            <nav class="hidden md:flex gap-6 text-sm font-medium">
-                <a href="#research" class="hover:text-chart-1 transition-colors">Research</a>
-                <a href="#how-it-works" class="hover:text-chart-1 transition-colors">How It Works</a>
-                <a href="#results" class="hover:text-chart-1 transition-colors">Results</a>
-            </nav>
-            <a href="login.html" class="hidden md:flex items-center justify-center px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all text-sm font-medium">
-                Client Login
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                Petstone Research Group
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl">
+                Science-based research on pet behavior, longevity, and financial planning for dog owners who demand results.
+            </p>
+            <a href="#featured" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded hover:bg-blue-50 transition-colors">
+                Explore Research →
             </a>
         </div>
     </header>
 
-    <!-- Hero Section - Rebranded for Potty Training -->
-    <section class="relative border-b border-border bg-gradient-to-br from-amber-50 to-orange-50">
-        <div class="container mx-auto px-4 grid lg:grid-cols-2 min-h-[600px]">
-            <div class="flex flex-col justify-center py-20 lg:pr-12">
-                <div class="inline-flex items-center gap-2 border border-amber-300 px-3 py-1 text-xs font-mono uppercase tracking-wider text-amber-800 mb-6 w-fit bg-amber-100">
-                    <span class="w-2 h-2 bg-chart-1 rounded-full animate-pulse"></span>
-                    Behavioral Science 2026
-                </div>
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                    Stop the Accidents. <span class="text-chart-1">Save Your Carpets.</span> Start in 7 Days.
-                </h1>
-                <p class="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                    The science-backed 7-Day Potty Training Protocol that works with your dog's neurobiology—not against it. 94% success rate. Zero punishment. Proven by 47,000+ families.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="reports/7-day-potty-training-breakthrough.html" class="inline-flex items-center justify-center px-8 py-3 bg-chart-1 text-white hover:bg-orange-600 transition-colors text-base font-medium">
-                        Read the Full Research Report
-                    </a>
-                    <a href="http://www.betterdailyguide.site/ds24/potty-training-in-7-days#aff=Frankenoid" target="_blank" class="inline-flex items-center justify-center px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-white transition-colors text-base font-medium">
-                        Watch the 7-Day Blueprint Video
-                    </a>
-                </div>
-            </div>
-            <div class="relative hidden lg:block bg-muted border-l border-border overflow-hidden">
-                <img src="images/hero-abstract-data.jpg" alt="Behavioral Science Research" class="absolute inset-0 w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700">
-                <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-                
-                <!-- Floating Stats Card -->
-                <div class="absolute bottom-12 left-12 bg-white/90 backdrop-blur p-6 border border-border max-w-xs shadow-xl">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="p-2 bg-chart-1/10 text-chart-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"></path></svg>
-                        </div>
-                        <div>
-                            <p class="text-xs font-mono text-muted-foreground uppercase">Success Rate</p>
-                            <p class="text-lg font-bold">94% in 7 Days</p>
-                        </div>
-                    </div>
-                    <div class="h-1 w-full bg-muted overflow-hidden">
-                        <div class="h-full bg-chart-1 w-[94%]"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Featured Research Section -->
-    <section id="research" class="py-16 bg-gradient-to-r from-amber-50 to-orange-50 border-b border-border">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="inline-block px-3 py-1 bg-chart-1 text-white text-xs font-bold rounded-full">FEATURED RESEARCH</span>
-                    <span class="text-sm font-mono text-chart-1">Household Investigation</span>
-                </div>
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">The 2026 Household Report: How a Simple 7-Day Protocol is Saving American Carpets (And Sanity)</h3>
-                <p class="text-gray-700 mb-6 text-lg">Discover the neuroscience behind why traditional potty training fails, and why the 7-Day Protocol achieves 94% success rates. Based on research from 47,000+ families and peer-reviewed behavioral studies.</p>
-                <a href="reports/7-day-potty-training-breakthrough.html" class="inline-block px-6 py-3 bg-chart-1 text-white font-semibold rounded hover:bg-orange-600 transition-colors">
-                    Read the Full Report →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="py-24 border-t border-border">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto mb-16">
-                <h2 class="text-4xl font-bold tracking-tight mb-6">The 7-Day Protocol: How It Works</h2>
-                <p class="text-xl text-muted-foreground mb-12">A science-based approach that works with your dog's neurobiology, not against it.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-chart-1 text-white">
-                            <span class="text-xl font-bold">1</span>
-                        </div>
+    <section id="featured" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Featured Research</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Potty Training Card -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="bg-amber-100 h-32 flex items-center justify-center">
+                        <div class="text-5xl">🐕</div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Scent Redirection</h3>
-                        <p class="text-muted-foreground">Redirect your dog's natural scent-marking drive to outdoor elimination zones using scientifically-designed markers.</p>
+                    <div class="p-6">
+                        <span class="text-xs font-mono text-amber-700 bg-amber-50 px-3 py-1 rounded">BEHAVIOR</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-3">7-Day Potty Training Breakthrough</h3>
+                        <p class="text-gray-600 mb-6">
+                            How a simple 7-day protocol is saving American carpets and transforming family relationships with their dogs.
+                        </p>
+                        <a href="reports/7-day-potty-training-breakthrough.html" class="inline-block px-6 py-2 bg-amber-700 text-white font-semibold rounded hover:bg-amber-800 transition-colors">
+                            Read Report →
+                        </a>
                     </div>
                 </div>
 
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-chart-1 text-white">
-                            <span class="text-xl font-bold">2</span>
-                        </div>
+                <!-- Longevity Card -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="bg-green-100 h-32 flex items-center justify-center">
+                        <div class="text-5xl">🧬</div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Environmental Lockdown</h3>
-                        <p class="text-muted-foreground">Strategic space management prevents accidents before they happen. Not punishment—smart design.</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-chart-1 text-white">
-                            <span class="text-xl font-bold">3</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Neurochemical Timing</h3>
-                        <p class="text-muted-foreground">Reward the desired behavior within 0.5 seconds to maximize dopamine release and learning.</p>
+                    <div class="p-6">
+                        <span class="text-xs font-mono text-green-700 bg-green-50 px-3 py-1 rounded">LONGEVITY</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-3">Canine Longevity Blueprint 2026</h3>
+                        <p class="text-gray-600 mb-6">
+                            The NAD+ revolution: How cellular aging research is adding 1-2 years to senior dog lifespans.
+                        </p>
+                        <a href="reports/canine-longevity-blueprint.html" class="inline-block px-6 py-2 bg-green-700 text-white font-semibold rounded hover:bg-green-800 transition-colors">
+                            Read Report →
+                        </a>
                     </div>
                 </div>
 
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-chart-1 text-white">
-                            <span class="text-xl font-bold">4</span>
-                        </div>
+                <!-- Brain Training Card -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="bg-purple-100 h-32 flex items-center justify-center">
+                        <div class="text-5xl">🧠</div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Long-Term Maintenance</h3>
-                        <p class="text-muted-foreground">Build sustainable habits that last a lifetime. Your dog stays trained for life.</p>
+                    <div class="p-6">
+                        <span class="text-xs font-mono text-purple-700 bg-purple-50 px-3 py-1 rounded">BEHAVIOR</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-3">Dog Brain Training Guide 2026</h3>
+                        <p class="text-gray-600 mb-6">
+                            Unlocking your dog's hidden intelligence through science-based cognitive training protocols.
+                        </p>
+                        <a href="reports/dog-brain-training-guide.html" class="inline-block px-6 py-2 bg-purple-700 text-white font-semibold rounded hover:bg-purple-800 transition-colors">
+                            Read Report →
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results" class="py-24 bg-secondary/30 border-t border-border">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold tracking-tight mb-16 text-center">Proven Results from Real Families</h2>
-
-            <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-16">
-                <div class="text-center">
-                    <p class="text-5xl font-bold text-chart-1 mb-2">94%</p>
-                    <p class="text-muted-foreground">Success within 7 days</p>
+    <!-- All Reports Section -->
+    <section id="behavior" class="py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Behavior Research</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 border border-gray-200 rounded hover:bg-gray-50 transition-colors">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">7-Day Potty Training Breakthrough</h3>
+                        <p class="text-gray-600 text-sm">How a simple 7-day protocol is saving American carpets</p>
+                    </div>
+                    <a href="reports/7-day-potty-training-breakthrough.html" class="text-blue-900 font-semibold hover:text-blue-700">Read →</a>
                 </div>
-                <div class="text-center">
-                    <p class="text-5xl font-bold text-chart-1 mb-2">47K+</p>
-                    <p class="text-muted-foreground">Families trained</p>
+                <div class="flex items-center justify-between p-4 border border-gray-200 rounded hover:bg-gray-50 transition-colors">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Dog Brain Training Guide 2026</h3>
+                        <p class="text-gray-600 text-sm">Unlocking your dog's hidden intelligence</p>
+                    </div>
+                    <a href="reports/dog-brain-training-guide.html" class="text-blue-900 font-semibold hover:text-blue-700">Read →</a>
                 </div>
-                <div class="text-center">
-                    <p class="text-5xl font-bold text-chart-1 mb-2">$2,100</p>
-                    <p class="text-muted-foreground">Avg savings per family</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-5xl font-bold text-chart-1 mb-2">0</p>
-                    <p class="text-muted-foreground">Punishment required</p>
-                </div>
-            </div>
-
-            <div class="max-w-4xl mx-auto bg-white border border-border p-8 rounded-lg">
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    "We were ready to return our rescue dog to the shelter after 3 weeks of constant accidents. The 7-Day Protocol changed everything. By day 5, our dog was completely housetrained. It's been 8 months with zero accidents. This program literally saved our family."
-                </p>
-                <p class="font-semibold text-gray-900">— Sarah M., Portland, OR</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-chart-1 to-orange-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Dog in 7 Days?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-95">
-                Stop the accidents. Stop the frustration. Start enjoying a clean, well-trained dog today.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="http://www.betterdailyguide.site/ds24/potty-training-in-7-days#aff=Frankenoid" target="_blank" class="inline-block px-8 py-4 bg-white text-chart-1 font-bold text-lg rounded hover:bg-gray-100 transition-colors">
-                    Check Program Availability →
-                </a>
-                <a href="http://www.betterdailyguide.site/ds24/potty-training-in-7-days#aff=Frankenoid" target="_blank" class="inline-block px-8 py-4 border-2 border-white text-white font-bold text-lg rounded hover:bg-white/10 transition-colors">
-                    Watch the 7-Day Blueprint Video →
-                </a>
+    <!-- Longevity Section -->
+    <section id="longevity" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Longevity Research</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 border border-gray-200 rounded hover:bg-white transition-colors">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Canine Longevity Blueprint 2026</h3>
+                        <p class="text-gray-600 text-sm">The NAD+ revolution in dog aging</p>
+                    </div>
+                    <a href="reports/canine-longevity-blueprint.html" class="text-blue-900 font-semibold hover:text-blue-700">Read →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance" class="py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Financial Research</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 border border-gray-200 rounded hover:bg-gray-50 transition-colors">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Pet Insurance Market Outlook 2026</h3>
+                        <p class="text-gray-600 text-sm">Financial analysis & CPL strategy</p>
+                    </div>
+                    <a href="reports/pet-insurance-2026.html" class="text-blue-900 font-semibold hover:text-blue-700">Read →</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary border-t border-border pt-16 pb-8">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
-                        <div class="h-8 w-8 bg-primary flex items-center justify-center text-white font-bold text-lg">P</div>
-                        <span class="text-xl font-bold tracking-tight">Petstone Research</span>
-                    </div>
-                    <p class="text-muted-foreground max-w-sm mb-6">
-                        Science-based behavioral research for dog owners who demand results. Trusted by 47,000+ families.
-                    </p>
-                    <div class="text-sm text-muted-foreground">
-                        <p>1001 Brickell Bay Dr, Suite 2700</p>
-                        <p>Miami, FL 33131</p>
-                        <p>research@petstone-group.com</p>
-                    </div>
-                </div>
-                
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h4 class="font-bold mb-6">Research</h4>
-                    <ul class="space-y-4 text-sm text-muted-foreground">
-                        <li><a href="reports/7-day-potty-training-breakthrough.html" class="hover:text-primary transition-colors">7-Day Protocol Report</a></li>
-                        <li><a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a></li>
-                        <li><a href="#results" class="hover:text-primary transition-colors">Results & Data</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Methodology</a></li>
+                    <h4 class="font-bold mb-4">Petstone Research</h4>
+                    <p class="text-gray-400 text-sm">Science-based research for dog owners who demand results.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Earnings Disclaimer</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-bold mb-6">Legal</h4>
-                    <ul class="space-y-4 text-sm text-muted-foreground">
-                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Earnings Disclaimer</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">DMCA</a></li>
-                    </ul>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400 text-sm">research@petstone-group.com</p>
                 </div>
             </div>
 
-            <div class="border-t border-border pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
-                    <p class="text-xs text-muted-foreground">
-                        &copy; 2026 Petstone Research Group. All rights reserved.
-                    </p>
-                </div>
-                
-                <!-- Mandatory Facebook Ad Disclaimer -->
-                <div class="p-4 bg-white border border-border text-[10px] text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto">
+            <div class="border-t border-gray-700 pt-8">
+                <p class="text-xs text-gray-500 text-center mb-4">
+                    © 2026 Petstone Research Group. All rights reserved.
+                </p>
+                <div class="p-4 bg-gray-800 text-[10px] text-gray-400 leading-relaxed text-center">
                     <p>
-                        This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+                        This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
                     </p>
                     <p class="mt-2">
-                        IMPORTANT: Earnings and Legal Disclaimers<br>
-                        Earnings and income representations made by Petstone Research Group and their advertisers/sponsors are aspirational statements only of your earnings potential. The success of Petstone Research Group, testimonials and other examples used are exceptional, non-typical results and are not intended to be and are not a guarantee that you or others will achieve the same results.
+                        IMPORTANT: Earnings and Legal Disclaimers. Earnings and income representations made by Petstone Research Group and their advertisers/sponsors are aspirational statements only of your earnings potential. Individual results may vary based on effort, consistency, dog temperament, age, and adherence to the program guidelines.
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
