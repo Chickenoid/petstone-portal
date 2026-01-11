@@ -18,6 +18,23 @@
         th { background-color: #0a5fa3; color: white; font-family: 'Inter', sans-serif; font-weight: 600; }
         tr:nth-child(even) { background-color: #f9fafb; }
     </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1258566569656702');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1258566569656702&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body class="bg-white text-gray-900">
     <!-- Header -->
@@ -319,6 +336,9 @@
                     <p class="mt-2">
                         IMPORTANT: Earnings and Legal Disclaimers. Earnings and income representations made by Petstone Research Group and their advertisers/sponsors are aspirational statements only of your earnings potential. Individual results may vary based on effort, consistency, dog temperament, age, and adherence to the program guidelines.
                     </p>
+                    <p class="border-t border-gray-700 pt-3 mt-3">
+                        <strong>Privacy & Data Collection Notice:</strong> This website uses Facebook Pixel and other tracking technologies to understand user behavior and optimize our content. We collect data including your IP address, browser type, pages visited, and interactions with our site. This data is used to improve your experience and may be shared with our advertising partners. By using this site, you consent to our data collection practices. For EU/UK residents: We comply with GDPR requirements. For California residents: You have rights under CCPA to access, delete, or opt-out of data sales. <a href="#" class="text-blue-400 hover:text-blue-300">View our Privacy Policy</a> for more information.
+                    </p>
                 </div>
             </div>
         </div>
@@ -338,5 +358,10 @@
             window.open(twitterUrl, 'twitter-share', 'width=600,height=400');
         }
     </script>
+<script>
+function trackLeadEvent() {
+    fbq('track', 'Lead');
+}
+</script>
 </body>
 </html>
